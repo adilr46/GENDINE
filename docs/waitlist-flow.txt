@@ -1,0 +1,18 @@
+========================
+AI WAITLIST FLOW
+========================
+
+Check-in
+    ↓
+Estimated Wait Time (Model)
+    ↓
+Table Assignment Model
+    ↓
+Stripe Payment (Confirmation Event)
+    ↓
+Table Cleared
+
+Description:
+- Waitlist predictions update continuously using venue occupancy + demand.
+- Payment confirmation acts as the authoritative signal that a seating is complete.
+- Clearing the table generates venue events used for future wait-time forecasts.
