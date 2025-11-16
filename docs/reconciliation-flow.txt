@@ -1,0 +1,17 @@
+========================
+RECONCILIATION FLOW
+========================
+
+Stripe Event Stream
+        ↓
+Venue State Store
+        ↓
+Payout Timeline Reconciliation
+        ↓
+Merchant Dashboard
+
+Description:
+- Stripe emits payout events (e.g., payout.paid, payout.failed).
+- GenDine fetches expected local payout totals.
+- Differences are flagged for operator review.
+- Audit log records all reconciliation outcomes.
