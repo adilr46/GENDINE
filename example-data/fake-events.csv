@@ -1,0 +1,7 @@
+```csv
+timestamp,event,venue_id
+2025-11-05T10:21:33Z,payment_intent.succeeded,v123
+2025-11-05T10:21:34Z,table_cleared,v123
+2025-11-05T10:22:01Z,waitlist.check_in,v123
+2025-11-05T10:25:45Z,table_assigned,v123
+2025-11-05T11:03:12Z,payout.expected,v123
